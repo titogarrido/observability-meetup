@@ -22,7 +22,7 @@ Para fazer os testes abaixo você precisará de um servidor (ou sua próprio PC)
 
 ## Diagrama das aplicações
 
-![](/Users/titogarridoogando/Documents/IBM/Solutions/meetup/meetup #2/git/images/apps.png)
+![](https://raw.githubusercontent.com/titogarrido/observability-meetup/master/images/apps.png)
 
 ## Testando o Opentracing e o Jaeger
 
@@ -57,7 +57,7 @@ A interface de consulta estará disponível em:
 http://localhost:16686
 ```
 
-![](/Users/titogarridoogando/Documents/IBM/Solutions/meetup/meetup #2/git/images/jaeger.png)
+![](https://raw.githubusercontent.com/titogarrido/observability-meetup/master/images/jaeger.png)
 
 
 
@@ -155,7 +155,7 @@ bash com-istio/meaning/build.sh
 
 Depois de executado observe seu dashboard do Kubernetes e confirme que os serviços estão no ar:
 
-![](/Users/titogarridoogando/Documents/IBM/Solutions/meetup/meetup #2/git/images/kubernetes.png)
+![](https://raw.githubusercontent.com/titogarrido/observability-meetup/master/images/kubernetes.png)
 
 Acesse a aplicação *frontend* utilizando seu *ingress*. Para descobrir qual o endereço de seu *ingress* ip e porta siga os passos de:
 
