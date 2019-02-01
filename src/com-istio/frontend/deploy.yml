@@ -1,0 +1,32 @@
+##################################################################################################
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  labels:
+    app: frontend
+spec:
+  ports:
+  - port: 8082
+    name: http
+  selector:
+    app: frontend
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: frontend-v1
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: frontend
+        version: v1
+    spec:
+      containers:
+      - name: frontend
+        image: titogarrido/observability-meetup-frontend:1.0
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 8082
